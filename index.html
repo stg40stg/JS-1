@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/style.css">
+	<title>HomeWork-1</title>
+</head>
+<body>
+	<ul class="list">
+		<li><a href="#" onclick="converterTemperature();">Задача №1 (Задать температуру в градусах по Цельсию)</a></li>
+		<li><a href="#" onclick="admin();">Задача №2 (Две переменные) </a></li>
+		<li><a href="#" onclick="oneThousand();">Задача №3 (1000 + "108")</a></li>
+	</ul>
+	<script>
+		function converterTemperature() {
+			var degreeCelsius = +prompt ('Введите сколько в градусах по Цельсию: ');
+			alert (' Это будет ' + ((9 / 5) * degreeCelsius + 32)
+			+ ' градусов по Фаренгейту');
+		}
+		function admin() {
+			var name = '"Василий"';
+			admin = name
+			alert (admin);
+		}
+		
+		function oneThousand() {
+			var a = 1000,
+				b = '108',
+				c = a + b;
+				alert (c +  console.log(c));
+		}
+	</script>
+</body>
+</html>
