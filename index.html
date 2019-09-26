@@ -10,8 +10,10 @@
 		<li><a href="#" onclick="converterTemperature();">Задача №1 (Задать температуру в градусах по Цельсию)</a></li>
 		<li><a href="#" onclick="admin();">Задача №2 (Две переменные) </a></li>
 		<li><a href="#" onclick="oneThousand();">Задача №3 (1000 + "108")</a></li>
-	</ul>
+	</ul>	
 	<script>
+		'use ctrict'
+
 		function converterTemperature() {
 			var degreeCelsius = +prompt ('Введите сколько в градусах по Цельсию: ');
 			alert (' Это будет ' + ((9 / 5) * degreeCelsius + 32)
@@ -28,6 +30,32 @@
 				b = '108',
 				c = a + b;
 				alert (c +  console.log(c));
+		}
+		function howMuch() {
+			let resault_1 = 10 + 10 + "10"
+			console.log (resault_1)
+			let resault_2 = 10 + "10" + 10
+			console.log (resault_2)
+			let resault_3 = 10 + 10 + +"10"
+			console.log (resault_3)
+			let resault_4 = 10 / -""
+			console.log (resault_4)
+			let resault_5 = 10 / +"2,5"
+			console.log (resault_5)
+			// 1. результат будет 2010, 10+10=20+"10"=2010
+			// 2. результат будет 101010, 10+"10"=1010 и так как уже строка +10 будет также как строка
+			// 3. результат будет 30, 10+10=20 + +"10" (унарный плюс  превращает "10" в число)
+			// 4. результат будет -infinity, унарный - превращает пустую строку в число, а так как строка пустая бужет -0, 10/-0 будет -бесконечность
+			// 5. результат будет NaN, унарный + не может превратить в число так как вместо . стоит , и присвоет значенрие NaN, 10/Nan = NaN
+		}
+
+		function correctVariable(){
+		let mode = "normal"; //корректно
+		let my_valu3 = 102;  //корректно
+		let 3my_value3 = "102";  //не корректно, нельзя начинать с цифры
+		let __hello__ = "world";  //корректно
+		let $$$ = "money";  //корректно
+		let !0_world = true;  //не корректно, не должно быть спецсимволов
 		}
 	</script>
 </body>
