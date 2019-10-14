@@ -1,0 +1,43 @@
+.wrap {
+    width: 400px;
+    padding: 10px;
+    background: rgb(236, 236, 236);
+    position: relative;
+    top: 15%;
+    left: calc(50% - 210px);
+    border: 1px solid black;
+}
+
+.hidden {
+    display: none;
+}
+button{
+    margin:0 0 0 50%;
+}
+button:hover{
+    background: grey;
+    transition: 0.5s;
+     color: white;
+}
+
+span {
+    position: absolute;
+    right: -15px;
+    top: -15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: lightgrey;
+    font-size: 34px;
+    cursor: pointer;
+    transition: 0.5s;
+    border: 1px solid black;
+}
+
+span:hover {
+    background: grey;
+    color: white;
+}
